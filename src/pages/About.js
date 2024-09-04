@@ -11,7 +11,7 @@ import {
 
 const AboutContainer = styled.div`
     padding: 100px 50px;
-    background: #2e2e2e; /* Dark background */
+    background: #2e2e2e;
     color: white;
     min-height: 100vh;
 `;
@@ -37,6 +37,7 @@ const ProfileSection = styled.div`
         p {
             max-width: 600px;
             font-size: 1.2rem;
+            line-height: 1.6;
         }
     }
 `;
@@ -44,7 +45,7 @@ const ProfileSection = styled.div`
 const QuoteSection = styled.div`
     margin-bottom: 50px;
     font-style: italic;
-    font-size: 1.5rem; /* Larger font size for quote */
+    font-size: 1.5rem;
     text-align: center;
     border-left: 4px solid #f0a500;
     padding-left: 20px;
@@ -115,30 +116,55 @@ const DetailsSection = styled.div`
     }
 `;
 
+const ContactSection = styled.div`
+    text-align: center;
+    margin-top: 50px;
+
+    h3 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    button {
+        background: #f0a500;
+        color: #2e2e2e;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+
+        &:hover {
+            background: #cc8500;
+        }
+    }
+`;
+
 const About = () => {
     return (
         <AboutContainer>
             <ProfileSection>
-                <img src="/asset/img/saroj.jpg" alt="Saroj Senuan" />
+                <img src="/asset/img/saroj.jpg" alt="シヌアン サロード" />
                 <div>
-                    <h2>Saroj Senuan</h2>
+                    <h2>シヌアン サロード</h2>
                     <p>
-                        Hello! I'm Saroj Senuan, a passionate full-stack
-                        developer with expertise in JavaScript and a strong
-                        foundation in various technologies. I love creating
-                        dynamic and responsive web applications that provide
-                        excellent user experiences.
+                        こんにちは！私はシヌアン
+                        サロードです。情熱を持って最新のWeb技術を学び、常に進化し続けるフルスタック開発者です。ユーザーに優れた体験を提供するため、ダイナミックでレスポンシブなWebアプリケーションの作成に力を入れています。
                     </p>
                 </div>
             </ProfileSection>
 
             <QuoteSection>
-                "Striving for excellence and innovation, one line of code at a
-                time."
+                「一行のコードから、革新と優れたものを追求しています。」
             </QuoteSection>
 
             <SkillsSection>
-                <h3>Skills</h3>
+                <h3>スキル</h3>
                 <div className="skills">
                     <div className="skill">
                         <FaHtml5 /> HTML
@@ -162,35 +188,35 @@ const About = () => {
             </SkillsSection>
 
             <DetailsSection>
-                <h3>More About Me</h3>
+                <h3>私についてもっと知る</h3>
                 <p>
-                    I am currently studying IT Business at Kyoto Computer
-                    Gakuin, with a focus on web development and full-stack
-                    engineering. My experience spans across frontend and backend
-                    technologies, and I am continually expanding my skill set to
-                    include new and emerging technologies.
+                    現在、京都コンピュータ学院でITビジネスを専攻し、Web開発とフルスタックエンジニアリングに焦点を当てています。フロントエンドからバックエンドまで幅広い技術に対応でき、常に新しい技術を取り入れてスキルを向上させることを心がけています。
                 </p>
                 <p>
-                    In addition to my technical skills, I am fluent in Japanese,
-                    Thai, and English, allowing me to communicate effectively in
-                    international settings. I am also passionate about fashion,
-                    which I believe enhances my creativity and eye for design.
+                    技術スキルに加えて、日本語、タイ語、英語に堪能で、国際的な環境でのコミュニケーションにも自信があります。また、ファッションにも情熱を持っており、その創造力はデザインの観点からも役立っています。
                 </p>
                 <ul>
+                    <li>AI技術をWebアプリケーションに統合することを探求中</li>
                     <li>
-                        Currently exploring AI technologies to integrate into
-                        web applications
+                        業界のトレンドに常に敏感で、テックコミュニティに積極的に参加
                     </li>
                     <li>
-                        Regularly participating in tech communities to stay
-                        updated with industry trends
-                    </li>
-                    <li>
-                        Interested in working in environments that promote
-                        innovation and teamwork
+                        イノベーションとチームワークを促進する環境で働くことに関心あり
                     </li>
                 </ul>
             </DetailsSection>
+
+            <ContactSection>
+                <h3>お問い合わせ</h3>
+                <p>
+                    ご質問やプロジェクトの相談がございましたら、ぜひご連絡ください。
+                </p>
+                <button
+                    onClick={() => alert('お問い合わせありがとうございます！')}
+                >
+                    お問い合わせ
+                </button>
+            </ContactSection>
         </AboutContainer>
     );
 };
