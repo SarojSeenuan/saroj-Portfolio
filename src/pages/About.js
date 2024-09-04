@@ -11,7 +11,7 @@ import {
 
 const AboutContainer = styled.div`
     padding: 100px 50px;
-    background: #2e2e2e;
+    background: #2e2e2e; /* Dark background */
     color: white;
     min-height: 100vh;
 `;
@@ -37,7 +37,6 @@ const ProfileSection = styled.div`
         p {
             max-width: 600px;
             font-size: 1.2rem;
-            line-height: 1.6;
         }
     }
 `;
@@ -45,7 +44,7 @@ const ProfileSection = styled.div`
 const QuoteSection = styled.div`
     margin-bottom: 50px;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Larger font size for quote */
     text-align: center;
     border-left: 4px solid #f0a500;
     padding-left: 20px;
@@ -120,22 +119,26 @@ const About = () => {
     return (
         <AboutContainer>
             <ProfileSection>
-                <img src="/asset/img/saroj.jpg" alt="シヌアン サロード" />
+                <img src="/asset/img/saroj.jpg" alt="Saroj Senuan" />
                 <div>
-                    <h2>シヌアン サロード</h2>
+                    <h2>Saroj Senuan</h2>
                     <p>
-                        こんにちは！私はシヌアン
-                        サロードです。情熱を持って最新のWeb技術を学び、常に進化し続けるフルスタック開発者です。ユーザーに優れた体験を提供するため、ダイナミックでレスポンシブなWebアプリケーションの作成に力を入れています。
+                        Hello! I'm Saroj Senuan, a passionate full-stack
+                        developer with expertise in JavaScript and a strong
+                        foundation in various technologies. I love creating
+                        dynamic and responsive web applications that provide
+                        excellent user experiences.
                     </p>
                 </div>
             </ProfileSection>
 
             <QuoteSection>
-                「一行のコードから、革新と優れたものを追求しています。」
+                "Striving for excellence and innovation, one line of code at a
+                time."
             </QuoteSection>
 
             <SkillsSection>
-                <h3>スキル</h3>
+                <h3>Skills</h3>
                 <div className="skills">
                     <div className="skill">
                         <FaHtml5 /> HTML
@@ -159,20 +162,32 @@ const About = () => {
             </SkillsSection>
 
             <DetailsSection>
-                <h3>私についてもっと知る</h3>
+                <h3>More About Me</h3>
                 <p>
-                    現在、京都コンピュータ学院でITビジネスを専攻し、Web開発とフルスタックエンジニアリングに焦点を当てています。フロントエンドからバックエンドまで幅広い技術に対応でき、常に新しい技術を取り入れてスキルを向上させることを心がけています。
+                    I am currently studying IT Business at Kyoto Computer
+                    Gakuin, with a focus on web development and full-stack
+                    engineering. My experience spans across frontend and backend
+                    technologies, and I am continually expanding my skill set to
+                    include new and emerging technologies.
                 </p>
                 <p>
-                    技術スキルに加えて、日本語、タイ語、英語に堪能で、国際的な環境でのコミュニケーションにも自信があります。また、ファッションにも情熱を持っており、その創造力はデザインの観点からも役立っています。
+                    In addition to my technical skills, I am fluent in Japanese,
+                    Thai, and English, allowing me to communicate effectively in
+                    international settings. I am also passionate about fashion,
+                    which I believe enhances my creativity and eye for design.
                 </p>
                 <ul>
-                    <li>AI技術をWebアプリケーションに統合することを探求中</li>
                     <li>
-                        業界のトレンドに常に敏感で、テックコミュニティに積極的に参加
+                        Currently exploring AI technologies to integrate into
+                        web applications
                     </li>
                     <li>
-                        イノベーションとチームワークを促進する環境で働くことに関心あり
+                        Regularly participating in tech communities to stay
+                        updated with industry trends
+                    </li>
+                    <li>
+                        Interested in working in environments that promote
+                        innovation and teamwork
                     </li>
                 </ul>
             </DetailsSection>
