@@ -116,35 +116,6 @@ const DetailsSection = styled.div`
     }
 `;
 
-const ContactSection = styled.div`
-    text-align: center;
-    margin-top: 50px;
-
-    h3 {
-        margin-bottom: 20px;
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    button {
-        background: #f0a500;
-        color: #2e2e2e;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 20px;
-
-        &:hover {
-            background: #cc8500;
-        }
-    }
-`;
-
 const About = () => {
     return (
         <AboutContainer>
@@ -205,18 +176,6 @@ const About = () => {
                     </li>
                 </ul>
             </DetailsSection>
-
-            <ContactSection>
-                <h3>お問い合わせ</h3>
-                <p>
-                    ご質問やプロジェクトの相談がございましたら、ぜひご連絡ください。
-                </p>
-                <button
-                    onClick={() => alert('お問い合わせありがとうございます！')}
-                >
-                    お問い合わせ
-                </button>
-            </ContactSection>
         </AboutContainer>
     );
 };
